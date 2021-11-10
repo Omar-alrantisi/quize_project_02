@@ -1,0 +1,62 @@
+
+{
+  "php":  [
+   {
+   "numb": 1,
+   "question": "PHP stands for?",
+   "answer": "Hypertext Preprocessor",
+   "options": [
+     "Hypertext Preprocessor",
+     "Pretext Hypertext Preprocessor",
+     "Personal Home Processor",
+     "Hyper Tool Multi Language"
+   ]
+ },
+   {
+   "numb": 2,
+   "question": "Variable name in PHP starts with?",
+   "answer": "$ (Dollar)",
+   "options": [
+     "! (Exclamation)",
+     "$ (Dollar)",
+     "& (Ampersand)",
+     "# (Hash)"
+   ]
+ },
+   {
+   "numb": 3,
+   "question": "Which of the following is the default file extension of PHP?",
+   "answer": ".php",
+   "options": [
+     ".php",
+     ".hphp",
+     "xml",
+     ".html"
+   ]
+ },
+   {
+   "numb": 4,
+   "question": "Which of the following is used to display the output in PHP?",
+   "answer": "Both (a) and (c)",
+   "options": [
+     "echo",
+     "write",
+     "print",
+     "Both (a) and (c)"
+   ]
+ },
+   {
+   "numb": 5,
+   "question": "Which of the following is the correct way to create a function in PHP?",
+   "answer": "function myFunction()",
+   "options": [
+     "Create myFunction()",
+     "New_function myFunction()",
+     "function myFunction()",
+     "None of the above"
+   ]
+ 
+ }
+  ]
+ }
+ 

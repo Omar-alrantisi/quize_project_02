@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- main css -->
+
+     <link rel="stylesheet" href="css/main.css">
+     <!-- welcome css -->
+     <link rel="stylesheet" href="css/welcome.css">
+     <!-- bootstrap css -->
+     <link rel="stylesheet" href="bootstrap/bootstrap-5.0.2-dist/css/bootstrap.css">
+     <!-- fount awsome -->
+ 
+     <!-- animate -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" referrerpolicy="no-referrer" />
+
+    
+
+
+</head>
+<body>
+
+     <!-- Start Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              
+              <li class="nav-item">
+                <a class="myButton nav-link" href="index.html">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- End Navbar -->
+
+    <!-- Start welcome section -->
+
+    <section class="welcome_section animate__animate animate__fadeInTopRight">
+        <h1 id="welcome_message" class="animate__animate animate__fadeInTopRight"></h1>
+
+        <h3>What Kind of Job You Need?</h3>
+    </section>
+    <!-- End welcome section -->
+
+    <!-- Start quiz section  -->
+
+     <section class="section_quizzes">
+       <div class="container">
+         <div class="row">
+           <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+              <img src="images/ava3.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">UX DESIGNER</h5>
+                <p class="card-text">(UX) design is the process design teams use to create products that provide meaningful and relevant experiences to users..
+                </p>
+                <a href="quiz.html" id="ux" class="start_quiz_btn">Start</a>
+              </div>
+            </div>
+           </div>
+           <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+              <img src="images/ava1.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">FRONT DEVELOPER</h5>
+                <p class="card-text">is responsible for using their knowledge of programming languages to code user-side applications.</p>
+                <a href="quiz.html" id="frontend" class="start_quiz_btn">Start</a>
+              </div>
+            </div>
+           </div>
+           <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+              <img src="images/ava4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PHP DEVELOPER</h5>
+                <p class="card-text">A PHP Developer is responsible for creating and implementing an array of Web-based products using PHP, MySQL, Ajax, and JavaScript.</p>
+                <a href="quiz.html" id="php" class="start_quiz_btn">Start</a>
+              </div>
+            </div>
+           </div>
+
+          
+           
+           
+          
+
+
+         </div>
+       </div>
+     </section>
+    <!-- End quiz section  -->
+
+
+    
+
+
+
+     <!-- script bootstrap -->
+     <script src="bootstrap/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    
+     <script>
+       const storedName = localStorage.getItem('username');
+       
+       const welcome_message=document.getElementById("welcome_message");
+       welcome_message.innerHTML=`Hello ${storedName}!`;
+
+
+       let start_quiz_btn = document.querySelectorAll('.start_quiz_btn');
+
+       start_quiz_btn.forEach(element => {
+            element.addEventListener('click', function(){
+                console.log(element.id);
+                localStorage.setItem("id", element.id);
+            })
+          });
+
+       
+
+     </script>
+
+     
+
+     <script src="js/quizq.js"></script>
+</body>
+</html>

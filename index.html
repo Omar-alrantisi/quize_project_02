@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <!-- main css -->
+
+    <link rel="stylesheet" href="css/main.css">
+    <!-- sign css -->
+    <link rel="stylesheet" href="css/sign.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <!-- fount awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- animate -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="#services">About Us</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="#contact">Contact Us</a>
+             </li>
+              <li class="nav-item">
+                <a class="myButton register"   href="#">Register</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Landing -->
+      <section class="landing_section" id="home">
+          <div class="landing_section_content ">
+              <div class="continer">
+                  <div class="row">
+                      <div class="col-lg-6">
+                          <div class="landing_section_content_part1" data-aos="fade-up-right">
+                              <h1>Online <span class="landing_span">Exam</span>  </h1>
+                              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                 Quod ullam in natus quaerat aspernatur! Reiciendis quam 
+                                 optio officiis quidem ea aut sunt suscipit aliquid, quis, ratione nostrum. Non, adipisci sint!</p>
+                              <a href="#" id="trynow"  class="myButton register">Try Now</a>
+                          </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="landing_section_content_part2 animate__animate animate__fadeInTopRight">
+                            <img src="images/landing_image.png" alt="">
+                            
+                        </div>
+                    </div>
+                  </div>
+              </div>
+
+          </div>
+      </section>
+
+    <!-- End Landing -->
+
+    <!-- services  -->
+  <section class="services" id="services"  data-aos="fade-right">
+   <div class="services-head">
+     <h2> Services</h2>
+   </div>
+   <div class="services-body">
+     <div class="container">
+       <div class="row">
+         <div class="col-lg-4 col-sm-12">
+           <div class="services-body-part-1">
+             <i class="fas fa-laptop-code"></i>
+             <h3>web design</h3>
+             <p>Working with client and community, we deliver
+               masterplans that create vibrant new places
+               and spaces, attract people, and encourage investment through.</p>
+           </div>
+         </div>
+         <div class="col-lg-4 col-sm-12">
+           <div class="services-body-part-1">
+             <i class="fas fa-mobile-alt"></i>
+             <h3>mobile coding</h3>
+             <p>Working with client and community, we deliver
+               masterplans that create vibrant new places
+               and spaces, attract people, and encourage investment through.</p>
+           </div>
+         </div>
+         <div class="col-lg-4 col-sm-12">
+           <div class="services-body-part-1">
+             <i class="far fa-gem"></i>
+             <h3>illustration</h3>
+             <p>Working with client and community, we deliver
+               masterplans that create vibrant new places
+               and spaces, attract people, and encourage investment through.</p>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ <!-- End services -->
+
+ <!-- start contact -->
+ <div class="container text-center" id="contact" data-aos="flip-left">
+   <div class="card p-5">
+       <div class="row">
+           <div class="col-md-12">
+               <div class="row">
+                   <div class="col-md-6"> <input type="text" placeholder="name" class="form-control" /> </div>
+                   <div class="col-md-6"> <input type="text" placeholder="email" class="form-control" /> </div>
+               </div>
+               <div class="row mt-3">
+                   <div class="col-md-12"> <textarea class="form-control textarea" rows="4">message </textarea> </div>
+               </div>
+               <div class="send-button mt-4"> <button class="button">Send Message</button> </div>
+           </div>
+       </div>
+   </div>
+</div>
+
+
+ <!-- end contact -->
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="footer-content">
+        <h3>© 2021 Omar AL-Rantisi, All Rights Reserved</h3>
+      </div>
+    </footer>
+    <!-- End Footer  -->
+
+    <!-- start sign Up & sign in -->
+    <div class="popUpSign" id="popUpSign"> 
+
+      <div class="wrapper">
+        
+        <i id="closesign" class="far fa-times-circle closing-tap"></i>
+
+        <div class="title-text">
+           <div class="title login">
+              Login 
+           </div>
+           <div class="title signup">
+              Signup
+           </div>
+        </div>
+        <div class="form-container">
+           <div class="slide-controls">
+              <input type="radio" name="slide" id="login" checked>
+              <input type="radio" name="slide" id="signup">
+              <label for="login" class="slide login">Login</label>
+              <label for="signup" class="slide signup">Signup</label>
+              <div class="slider-tab"></div>
+           </div>
+           <div class="form-inner">
+              <form action="#" id="formSignIn" class="login">
+                 <div class="field">
+                    <input type="text" id="email_sign_in" placeholder="Email Address" required>
+                 </div>
+                 <div class="field">
+                    <input type="password" id="pass_sign_in" placeholder="Password" required>
+                 </div>
+                 <div id="signinhelp"></div>
+                 <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" id="Login" value="Login">
+                 </div>
+                 <div class="signup-link">
+                    Not a member? <a href="">Signup now</a>
+                 </div>
+              </form>
+              <form action="#" id="formSignUp" class="signup">
+               <div class="field">
+                  <input type="text" id="inputUsername" placeholder="Username">
+                  <div class="helpmessage" id="inputUsernameHelp"></div>
+               </div>
+                 <div class="field">
+                    <input type="text" id="inputEmail" placeholder="Email Address">
+                    <div class="helpmessage" id="inputEmailHelp"></div>
+                  </div>
+                 <div class="field">
+                    <input type="password" id="inputPass" placeholder="Password">
+                    <div class="helpmessage" id="inputPassHelp"></div>
+                  </div>
+                 
+                 <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" id="signUp" value="Signup">
+                    
+                 </div>
+              </form>
+           </div>
+        </div>
+     </div>
+    </div>
+
+    <!-- End sign Up & sign in -->
+
+    <!-- main js -->
+    <script src="js/main.js"></script>
+
+    <!-- sign js -->
+    <script src="js/sign.js"></script>
+    
+    <!-- bootstrap js -->
+    <script src="bootstrap/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+    </script>
+</body>
+</html>
